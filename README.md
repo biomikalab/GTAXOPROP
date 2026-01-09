@@ -33,7 +33,7 @@ This version includes substantial modifications and enhancements while maintaini
 # Quick Start
 
 ## Installation
-Currently we only support installation thru pip command only.
+Currently we only support installation thru `pip` command only.
 ```bash
 pip install git+https://github.com/biomikalab/GTAXOPROP.git
 ```

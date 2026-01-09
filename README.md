@@ -1,10 +1,10 @@
-# GTAXOPROP
+# GTAXOPROP (Genbinesia Taxonomy Propagator)
 
 ![Python Version](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
 
-**GTAXOPROP** (Genbinesia Taxonomy Propagator) is a utility to generate input files for taxonomy propagation and assignment in QIIME/QIIME2 from the NCBI database. It converts NCBI accession numbers to QIIME-compatible taxonomy files with API fallback.
+**GTAXOPROP** is a utility to generate input files for taxonomy propagation and assignment in QIIME/QIIME2 from the NCBI database. It converts NCBI accession numbers to QIIME-compatible taxonomy files with API fallback.
 
 # ⚠️ Derivative Work Notice
 

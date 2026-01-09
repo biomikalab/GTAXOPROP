@@ -25,15 +25,24 @@ This version includes substantial modifications and enhancements while maintaini
 # Quick Start
 
 ## Usage
+For propagating taxonomy of Archaea, Bacteria, and Eukaryota
 ```bash
 gtaxoprop -i your_sequences.fasta -o your_taxdumps.txt -g your_execution.log -n /path/to/your/NCBI/taxdump/ -a /path/to/your/NCBI/accession2taxid/wgs.accession2taxid -r domain,kingdom,phylum,class,order,family,genus,species -d --email your_mail@email.xxx
+```
+
+For propagating taxonomy of Virus
+```bash
+gtaxoprop -i your_sequences.fasta -o your_taxdumps.txt -g your_execution.log -n /path/to/your/NCBI/taxdump/ -a /path/to/your/NCBI/accession2taxid/wgs.accession2taxid -r realm,kingdom,phylum,class,order,family,genus,species -d --email your_mail@email.xxx
+```
 
 ## Help
+To access the help, use:
 ```bash
 gtaxoprop -h
+```
 
 # Acknowledgments
-Based on entrez_qiime Version 2.0 by Chris Baker (https://github.com/bakerccm/entrez_qiime)
+This program is based on entrez_qiime Version 2.0 by Chris Baker (https://github.com/bakerccm/entrez_qiime)
 
 # License
 GNU General Public License v3.0 - See LICENSE

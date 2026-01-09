@@ -29,6 +29,7 @@ This version includes substantial modifications and enhancements while maintaini
 gtaxoprop -i your_sequences.fasta -o your_taxdumps.txt -g your_execution.log -n /path/to/your/NCBI/taxdump/ -a /path/to/your/NCBI/accession2taxid/wgs.accession2taxid -r domain,kingdom,phylum,class,order,family,genus,species -d --email your_mail@email.xxx
 
 ## Help
+```bash
 gtaxoprop -h
 
 # Acknowledgments

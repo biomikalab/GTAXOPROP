@@ -16,6 +16,7 @@ This version includes substantial modifications and enhancements while maintaini
 # Major Enhancements from Original
 - ✅ Complete Python 3 migration
 - ✅ cogent3 integration (replaced PyCogent)
+- ✅ Better NCBI Entrez communication using Biopython 
 - ✅ Advanced caching with resume capability
 - ✅ Batch API processing with rate limiting
 - ✅ Improved error handling and logging

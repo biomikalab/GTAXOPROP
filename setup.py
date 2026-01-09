@@ -33,7 +33,7 @@ setup(
     install_requires=[
         "tinydb==4.8.2",
         "pbr>=6.1.1",
-        "stevedore>=5.5.0"
+        "stevedore>=5.5.0",
         "cogent3>=2025.9.8a2",
         "biopython>=1.85",
     ],
@@ -50,3 +50,4 @@ setup(
     },
     license="GPLv3",
 )
+

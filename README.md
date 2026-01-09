@@ -22,6 +22,14 @@ This version includes substantial modifications and enhancements while maintaini
 - ✅ Enhanced file encoding detection
 - ✅ Better taxonomy rank handling
 
+# Authors
+- Maulana Malik Nashrulloh (Division of Biomics Research, Department of Sciences, Generasi Biologi Indonesia Foundation)
+- Sonia Az Zahra Defi (Department of Biology, Faculty of Mathematics and Natural Sciences, Brawijaya University)
+- Brian Rahardi (Department of Bioinformatics, Faculty of Mathematics and Natural Sciences, Brawijaya University)
+- Muhammad Badrut Tamam (Division of Biomics Research, Department of Sciences, Generasi Biologi Indonesia Foundation & Biology Program, Faculty of Science, Technology, and Education, Muhammadiyah University of Lamongan)
+- Riki Ruhimat (Research Center for Applied Microbiology, Research Organization for Life Sciences, National Research and Innovation Agency)
+- Hessy Novita (Research Center for Veterinary Science, Research Organization for Health, National Research and Innovation Agency)
+
 # Quick Start
 
 ## Usage

@@ -32,13 +32,21 @@ This version includes substantial modifications and enhancements while maintaini
 
 # Quick Start
 
+## Installation
+Currently we only support installation thru pip command only.
+```bash
+pip install git+https://github.com/biomikalab/GTAXOPROP.git
+```
+
+We hope we may provide PyPI and conda packages too in the future. STAY TUNES!
+
 ## Usage
-For propagating taxonomy of Archaea, Bacteria, and Eukaryota
+For propagating taxonomy of Archaea, Bacteria, and Eukaryota:
 ```bash
 gtaxoprop -i your_sequences.fasta -o your_taxdumps.txt -g your_execution.log -n /path/to/your/NCBI/taxdump/ -a /path/to/your/NCBI/accession2taxid/wgs.accession2taxid -r domain,kingdom,phylum,class,order,family,genus,species -d --email your_mail@email.xxx
 ```
 
-For propagating taxonomy of Virus
+For propagating taxonomy of Virus:
 ```bash
 gtaxoprop -i your_sequences.fasta -o your_taxdumps.txt -g your_execution.log -n /path/to/your/NCBI/taxdump/ -a /path/to/your/NCBI/accession2taxid/wgs.accession2taxid -r realm,kingdom,phylum,class,order,family,genus,species -d --email your_mail@email.xxx
 ```

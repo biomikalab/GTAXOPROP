@@ -50,7 +50,10 @@ Currently we only support installation thru `pip` command only.
 pip install git+https://github.com/biomikalab/GTAXOPROP.git
 ```
 
-We hope we may provide PyPI and conda packages too in the future. STAY TUNES!
+For much stable wheel package can be installed by `pip`
+```bash
+pip install gtaxoprop
+```
 
 ## Usage
 To use this program, you must have NCBI taxdump and accession2taxid data

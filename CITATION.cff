@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "GTAXOPROP: A utility to generate input files for taxonomy propagation and assignment in QIIME/QIIME2 from the NCBI database"
+version: 1.0.0
+date-released: 2025-08-20
+url: "https://github.com/yourusername/gtaxoprop"
+license: GPL-3.0
+authors:
+  - given-names: Maulana Malik
+    family-names: Nashrulloh
+    email: maulana@genbinesia.or.id
+  - given-names: Sonia Az Zahra
+    family-names: Defi
+  - given-names: Brian
+    family-names: Rahardi
+  - given-names: Muhammad Badrut
+    family-names: Tamam
+  - given-names: Riki
+    family-names: Ruhimat
+  - given-names: Hessy
+    family-names: Novita
+repository-code: "https://github.com/biomikalab/GTAXOPROP"
+keywords:
+  - bioinformatics
+  - taxonomy
+  - ncbi
+  - qiime
+  - qiime2
+abstract: "A simple utility to generate input files for taxonomy propagation and assignment in QIIME/QIIME2 from the NCBI database, based on entrez_qiime with enhanced features."
+  

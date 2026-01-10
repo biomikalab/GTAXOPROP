@@ -5,7 +5,7 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
 [![Github All Releases](https://img.shields.io/github/downloads/biomikalab/GTAXOPROP/total.svg)]()
 
-**GTAXOPROP** is a utility to generate input files for taxonomy propagation and assignment in QIIME/QIIME2 from the NCBI database. It converts NCBI accession numbers to QIIME-compatible taxonomy files with API fallback.
+**GTAXOPROP** is a utility to generate input files for taxonomy propagation and assignment in QIIME/QIIME2 from the NCBI database. It converts NCBI accession numbers to QIIME/QIIME2-compatible taxonomy files with API fallback.
 
 # ⚠️ Derivative Work Notice
 

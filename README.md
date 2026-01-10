@@ -122,7 +122,7 @@ Nashrulloh, M.M., Defi, S.A.Z., Rahardi, B., Tamam, Mh. B., Ruhimat, R., & Novit
 
 If you wish to cite this repository, you may use the following APA-style reference entry:
 
-Nashrulloh, M.M., Defi, S.A.Z., Rahardi, B., Tamam, Mh. B., Ruhimat, R., & Novita, H. (2025). GTAXOPROP: A utility to generate input files for taxonomy propagation and assignment in QIIME/QIIME2 from the NCBI database (Version 1.0.0) [Computer software]. https://github.com/biomikalab/GTAXOPROP
+Nashrulloh, M.M., Defi, S.A.Z., Rahardi, B., Tamam, Mh. B., Ruhimat, R., & Novita, H. (2025). GTAXOPROP: A utility to generate input files for taxonomy propagation and assignment in QIIME/QIIME2 from the NCBI database (Version 1.0.post1) [Computer software]. https://github.com/biomikalab/GTAXOPROP
 
 # License
 GNU General Public License v3.0 - See LICENSE

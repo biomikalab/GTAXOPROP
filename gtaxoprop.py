@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 GTAXOPROP - A utility to generate input files for taxonomy propagation and assignment in QIIME/QIIME2 from the NCBI database
-Converts NCBI accession numbers to QIIME-compatible taxonomy files.
+Converts NCBI accession numbers to QIIME/QIIME2-compatible taxonomy files.
 Supports both FASTA files and accession lists with API fallback.
 
 Copyright (C) 2025  Maulana Malik Nashrulloh, Sonia Az Zahra Defi, 
@@ -915,4 +915,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
     

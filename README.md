@@ -34,6 +34,16 @@ This version includes substantial modifications and enhancements while maintaini
 
 # Quick Start
 
+## Dependencies
+
+Make sure that your system have Python >=3.10 installed and these packages/libraries installed:
+
+- tinydb==4.8.2
+- pbr>=6.1.1
+- stevedore>=5.5.0
+- cogent3>=2025.9.8a2
+- biopython>=1.85
+
 ## Installation
 Currently we only support installation thru `pip` command only.
 ```bash
@@ -45,12 +55,24 @@ We hope we may provide PyPI and conda packages too in the future. STAY TUNES!
 ## Usage
 For propagating taxonomy of Archaea, Bacteria, and Eukaryota:
 ```bash
-gtaxoprop -i your_sequences.fasta -o your_taxdumps.txt -g your_execution.log -n /path/to/your/NCBI/taxdump/ -a /path/to/your/NCBI/accession2taxid/wgs.accession2taxid -r domain,kingdom,phylum,class,order,family,genus,species -d --email your_mail@email.xxx
+gtaxoprop -i /path/to/your/your_sequences.fasta \
+          -o /path/to/your/your_taxdumps.txt \
+          -g /path/to/your/your_execution.log \
+          -n /path/to/your/NCBI/taxdump/ \
+          -a /path/to/your/NCBI/accession2taxid/wgs.accession2taxid \
+          -r domain,kingdom,phylum,class,order,family,genus,species \
+          -d --email your_mail@email.xxx
 ```
 
 For propagating taxonomy of Virus:
 ```bash
-gtaxoprop -i your_sequences.fasta -o your_taxdumps.txt -g your_execution.log -n /path/to/your/NCBI/taxdump/ -a /path/to/your/NCBI/accession2taxid/wgs.accession2taxid -r realm,kingdom,phylum,class,order,family,genus,species -d --email your_mail@email.xxx
+gtaxoprop -i /path/to/your/your_sequences.fasta \
+          -o /path/to/your/your_taxdumps.txt \
+          -g /path/to/your/your_execution.log \
+          -n /path/to/your/NCBI/taxdump/ \
+          -a /path/to/your/NCBI/accession2taxid/wgs.accession2taxid \
+          -r realm,kingdom,phylum,class,order,family,genus,species \
+          -d --email your_mail@email.xxx
 ```
 
 ## Help
@@ -60,7 +82,7 @@ gtaxoprop -h
 ```
 
 # Acknowledgments
-This program is based on entrez_qiime Version 2.0 by Chris Baker (https://github.com/bakerccm/entrez_qiime)
-
+- This program is based on entrez_qiime Version 2.0 by Chris Baker (https://github.com/bakerccm/entrez_qiime)
+- Part of this program was presented at 4th International Conference on Biological Sciences (ICoBioS 2025) (https://www.icobios.org/)
 # License
 GNU General Public License v3.0 - See LICENSE

@@ -12,7 +12,7 @@
 GTAXOPROP is a **derivative work** based on `entrez_qiime` v2.0 by Christopher C. M. Baker.
 This version includes substantial modifications and enhancements while maintaining GPL v3 compliance.
 
-**Original work:** Baker, C. C. M. (2016). entrez_qiime. v2.0. https://github.com/bakerccm/entrez_qiime
+**Original work:** Baker, C.C.M. (2016). entrez_qiime. v2.0. https://github.com/bakerccm/entrez_qiime
 
 # Major Enhancements from Original
 - ✅ Complete Python 3 migration
@@ -110,5 +110,12 @@ gtaxoprop -h
 # Acknowledgments
 - This program is based on entrez_qiime Version 2.0 by Chris Baker (https://github.com/bakerccm/entrez_qiime)
 - Part of this program was presented at 4th International Conference on Biological Sciences (ICoBioS 2025) (https://www.icobios.org/)
+- This program was made as part of research mini-project "In silico metagenomic assessment of aCPSF1 phylogenetic marker for the identification and classification of archaea using publicly available Metagenomic Whole-genome Shotgun Sequencing data" funded internally by Generasi Biologi Indonesia Foundation.
+
+# Citation
+A dedicated publication for this program is not yet available. For citation purposes, please refer to the following technical report:
+
+Nashrulloh, H., Defi, S.A.Z., Rahardi, B., Tamam, Mh.B., Ruhimat, R., Novita, H. 2025. GTAXOPROP: A utility to generate input files for taxonomy propagation and assignment in QIIME/QIIME2 from the NCBI database. Generasi Biologi Indonesia Foundation. Gresik, Indonesia. Technical Report No. GBR-TR-BIOMIKA-01/Genbinesia/IX/2025.
+
 # License
 GNU General Public License v3.0 - See LICENSE

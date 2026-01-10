@@ -9,10 +9,10 @@
 
 # ⚠️ Derivative Work Notice
 
-GTAXOPROP is a **derivative work** based on `entrez_qiime` v.2.0 by Christopher C. M. Baker.
+GTAXOPROP is a **derivative work** based on `entrez_qiime` v2.0 by Christopher C. M. Baker.
 This version includes substantial modifications and enhancements while maintaining GPL v3 compliance.
 
-**Original work:** Baker, C. C. M. (2016). entrez_qiime. Version 2.0. https://github.com/bakerccm/entrez_qiime
+**Original work:** Baker, C. C. M. (2016). entrez_qiime. v2.0. https://github.com/bakerccm/entrez_qiime
 
 # Major Enhancements from Original
 - ✅ Complete Python 3 migration
@@ -53,24 +53,50 @@ pip install git+https://github.com/biomikalab/GTAXOPROP.git
 We hope we may provide PyPI and conda packages too in the future. STAY TUNES!
 
 ## Usage
+To use this program, you must have NCBI taxdump and accession2taxid data
+
+- taxdump.tar.gz (https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz). This tarball contains files that constitute the full NCBI taxonomy database, primarily used for local installations and bioinformatics tools that require taxonomic information
+- nucl_gb.accession2taxid.gz (https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/nucl_gb.accession2taxid.gz). This file store TaxID mapping for live nucleotide sequence records of type WGS or TSA.
+- nucl_wgs.accession2taxid.gz (https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/nucl_wgs.accession2taxid.gz). This file store TaxID mapping for live nucleotide sequence records that are not WGS or TSA.
+
+Unpacked nucl_gb.accession2taxid.gz and nucl_wgs.accession2taxid.gz is very huge! (Spending 10 GB+ and 40 GB+ space respectively, manage your disk space accordingly!). Alternatively, you may choose only one, nucl_gb.accession2taxid.gz or nucl_wgs.accession2taxid.gz one, but this may will not cover entirety of your data.
+
+Assumed that you have enough free space of 100-150 GB+ at your ~ (/home/username/), run this command one-by-one to set up your data:
+```bash
+cd ~
+mkdir ~/path/to/your/NCBI/taxdump
+cd ~/path/to/your/NCBI/taxdump
+wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz
+tar -zxvf taxdump.tar.gz
+mkdir ~/path/to/your/NCBI/accession2taxid
+cd ~/path/to/your/NCBI/accession2taxid
+wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/nucl_gb.accession2taxid.gz
+gunzip nucl_gb.accession2taxid.gz
+wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/nucl_wgs.accession2taxid.gz
+gunzip nucl_wgs.accession2taxid.gz
+cp nucl_gb.accession2taxid nucl_merged.accession2taxid
+tail -n+2 nucl_wgs.accession2taxid >> nucl_merged.accession2taxid
+rm nucl_gb.accession2taxid nucl_wgs.accession2taxid
+```
+
 For propagating taxonomy of Archaea, Bacteria, and Eukaryota:
 ```bash
-gtaxoprop -i /path/to/your/your_sequences.fasta \
-          -o /path/to/your/your_taxdumps.txt \
-          -g /path/to/your/your_execution.log \
-          -n /path/to/your/NCBI/taxdump/ \
-          -a /path/to/your/NCBI/accession2taxid/wgs.accession2taxid \
+gtaxoprop -i ~/path/to/your/your_sequences.fasta \
+          -o ~/path/to/your/your_taxdumps.txt \
+          -g ~/path/to/your/your_execution.log \
+          -n ~/path/to/your/NCBI/taxdump/ \
+          -a ~/path/to/your/NCBI/accession2taxid/wgs.accession2taxid \
           -r domain,kingdom,phylum,class,order,family,genus,species \
           -d --email your_mail@email.xxx
 ```
 
 For propagating taxonomy of Virus:
 ```bash
-gtaxoprop -i /path/to/your/your_sequences.fasta \
-          -o /path/to/your/your_taxdumps.txt \
-          -g /path/to/your/your_execution.log \
-          -n /path/to/your/NCBI/taxdump/ \
-          -a /path/to/your/NCBI/accession2taxid/wgs.accession2taxid \
+gtaxoprop -i ~/path/to/your/your_sequences.fasta \
+          -o ~/path/to/your/your_taxdumps.txt \
+          -g ~/path/to/your/your_execution.log \
+          -n ~/path/to/your/NCBI/taxdump/ \
+          -a ~/path/to/your/NCBI/accession2taxid/wgs.accession2taxid \
           -r realm,kingdom,phylum,class,order,family,genus,species \
           -d --email your_mail@email.xxx
 ```

@@ -59,7 +59,7 @@ To use this program, you must have NCBI taxdump and accession2taxid data
 - nucl_gb.accession2taxid.gz (https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/nucl_gb.accession2taxid.gz). This file store TaxID mapping for live nucleotide sequence records of type WGS or TSA.
 - nucl_wgs.accession2taxid.gz (https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/nucl_wgs.accession2taxid.gz). This file store TaxID mapping for live nucleotide sequence records that are not WGS or TSA.
 
-Unpacked nucl_gb.accession2taxid.gz and nucl_wgs.accession2taxid.gz is very huge! (Spending 10 GB+ and 40 GB+ space respectively, manage your disk space accordingly!). Alternatively, you may choose only one, nucl_gb.accession2taxid.gz or nucl_wgs.accession2taxid.gz one, but this may will not cover entirety of your data.
+Unpacked content of nucl_gb.accession2taxid.gz and nucl_wgs.accession2taxid.gz respectively is very huge! (Spending 10 GB+ and 40 GB+ space respectively, manage your disk space accordingly!). Alternatively, you may choose only one, nucl_gb.accession2taxid.gz or nucl_wgs.accession2taxid.gz one, but this may will not cover entirety of your data.
 
 Assumed that you have enough free space of 100-150 GB+ at your ~ (/home/username/), run this command one-by-one to set up your data:
 ```bash

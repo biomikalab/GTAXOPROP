@@ -14,4 +14,4 @@
   - Email: ccmbaker@fas.harvard.edu
 
 ## Contact
-For questions about this derivative work: maulana@genbinesia.or.id
+For questions about GTAXOPROP: maulana@genbinesia.or.id

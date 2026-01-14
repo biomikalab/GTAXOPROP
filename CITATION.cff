@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "GTAXOPROP: A utility to generate input files for taxonomy propagation and assignment in QIIME/QIIME2 from the NCBI database"
-version: 1.0.0
+version: 1.0.post1
 date-released: 2025-08-20
 url: "https://github.com/yourusername/gtaxoprop"
 license: GPL-3.0
